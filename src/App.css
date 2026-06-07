@@ -1,0 +1,191 @@
+/* App.css - Clean E-Commerce Design */
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+}
+
+.navbar h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+.navbar ul li:hover {
+  color: var(--accent);
+}
+
+/* Global Buttons */
+button {
+  padding: 10px 22px;
+  background: var(--text-h);
+  color: var(--bg);
+  border: 1px solid var(--text-h);
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  text-align: left; /* Fixes global center-align */
+}
+
+.hero div {
+  flex: 1;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  line-height: 1.15;
+  margin: 0 0 20px 0;
+}
+
+.hero p {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: var(--text);
+}
+
+.hero img {
+  flex: 1;
+  max-width: 480px;
+  height: 550px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Categories Grid */
+.categories h2, .products h2, .testimonials h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.box {
+  padding: 40px 20px;
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.box:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* Products Grid */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: transparent;
+  text-align: left; /* Overrides center text */
+}
+
+.card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  margin: 0 0 6px 0;
+  color: var(--text-h);
+}
+
+.card p {
+  font-weight: 600;
+  color: var(--accent);
+}
+
+/* Testimonials */
+.review-box {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.review {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  padding: 30px;
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  text-align: left;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  border-top: 1px solid var(--border);
+  margin-top: 40px;
+}
+
+.footer h3 {
+  margin: 0 0 10px 0;
+  color: var(--text-h);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .hero img {
+    width: 100%;
+    height: 350px;
+  }
+  .navbar ul {
+    display: none; /* Simplifies mobile presentation */
+  }
+}
