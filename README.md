@@ -16,10 +16,10 @@ FashionHub is a clean, minimal, and fully responsive e-commerce storefront landi
 ## 📸 Interface Preview
 
 ### Desktop View
-![Desktop Landing Preview](https://placehold.co/800x450/16171d/ffffff?text=Place+Desktop+Screenshot+Here)
+![Desktop Landing Preview](./public/Screenshot 2026-06-07 125011.png)
 
 ### Responsive Grid & Sections
-![Grid Layout Preview](https://placehold.co/800x450/f4f3ec/08060d?text=Place+Products+and+Categories+Screenshot+Here)
+![Grid Layout Preview](./public/Screenshot 2026-06-07 125045.png)
 
 ---
 
