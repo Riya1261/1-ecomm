@@ -1,18 +1,40 @@
-# React + Vite
+# FashionHub - Modern E-Commerce UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+FashionHub is a clean, minimal, and fully responsive e-commerce storefront landing page built using **React** and modern **CSS Grid/Flexbox**. It features a smooth dual-tone design that seamlessly adapts to both light and dark system preferences.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+* **Clean Aesthetics:** Minimal typography, balanced whitespace, and flat card designs for a high-end retail feel.
+* **Fully Responsive Grid:** Dynamically adjusts across desktop, tablet, and mobile displays using `auto-fit` layout structures.
+* **System Native Dark Mode:** Automatically syncs with the user's system preferences using native CSS variables.
+* **Component-Driven Architecture:** Modular React components for effortless scaling and maintenance.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
+## 📸 Interface Preview
 
-## Expanding the ESLint configuration
+### Desktop View
+![Desktop Landing Preview](https://placehold.co/800x450/16171d/ffffff?text=Place+Desktop+Screenshot+Here)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Responsive Grid & Sections
+![Grid Layout Preview](https://placehold.co/800x450/f4f3ec/08060d?text=Place+Products+and+Categories+Screenshot+Here)
+
+---
+
+## 🛠️ Project Structure
+
+```text
+├── src/
+│   ├── components/
+│   │   ├── Navbar.jsx        # Transparent, fixed navigation bar
+│   │   ├── Hero.jsx          # Left-aligned marquee banner with call-to-action
+│   │   ├── Categories.jsx    # Smooth grid container for collection categories
+│   │   ├── Products.jsx      # Flat-card trending product catalog display
+│   │   ├── Testimonials.jsx  # Customer feedback and review module
+│   │   └── Footer.jsx        # Storefront index & rights notice
+│   ├── App.jsx               # Entry component bundle
+│   ├── App.css               # Main layout structures & custom component spacing
+│   ├── index.css             # System typography theme and light/dark configurations
+│   └── main.jsx              # Virtual DOM entrypoint
